@@ -1,0 +1,7 @@
+
+codigo de backend de todo esto
+
+endpoints (rutas validas y especificar si llevaran query o body (osea seran GET O POST))
+
+disenio de las tablas en un doc de word
+

@@ -10,7 +10,7 @@ exports.preferences_create = (req, res) => {
   newpreference
     .save()
     .then((newDBObject) => console.log("Success", newDBObject))
-    .catch((err) => console.log("oops!".err));
+    .catch((err) => console.log("oops!", err));
 
   res.send(newpreference);
 };

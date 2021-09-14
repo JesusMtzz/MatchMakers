@@ -1,16 +1,22 @@
 const mongoose = require("mongoose");
 
 const preferencesSchema = new mongoose.Schema({
-  name: {
+  pais: {
     type: String,
     required: true,
-    minlength: 5,
-    maxlength: 20,
-    unique: true,
   },
-  year: {
+  zonaHoraria: {
     type: Number,
-    default: 1,
+    default: 0,
+  },
+  PrivSoloAmigos: Boolean,
+  horariosJugarIni: {
+    type: Number,
+    default: 12,
+  },
+  horariosJugarFin: {
+    type: Number,
+    default: 14,
   },
 });
 

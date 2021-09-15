@@ -1,19 +1,13 @@
 const mongoose = require('mongoose')
 
 const AmigosSchema = new mongoose.Schema({
-    miembros: [{
-        type: String,
-        required: true
-    }],
-    imagen: {
+    contacto: {
         type: String,
         required: true
     },
-    descripcion: {
+    amigo: {
         type: String,
         required: true,
-        minlength: 1,
-        maxlength: 128
     }
 })
 

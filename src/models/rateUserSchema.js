@@ -8,6 +8,7 @@ const rateUserSchema = new mongoose.Schema({
   },
   Comment: {
     type: String,
+    trim: true,
     required: [true, "Es necesario un comentario"],
   },
   id_user_calif: {

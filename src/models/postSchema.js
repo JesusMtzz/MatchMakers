@@ -5,6 +5,9 @@ const postSchema = new mongoose.Schema({
     type: String,
     required: [true, "Ocupa el nombre de quien lo creo"],
   },
+  picture: {
+    type: String,
+  },
   fechaCreacion: {
     type: Date,
     default: Date.now,

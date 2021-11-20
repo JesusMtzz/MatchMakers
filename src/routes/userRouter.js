@@ -8,8 +8,8 @@ const checkJwt = require("../middleware/checkJwt");
 //-ruta
 //-funcion
 
-router.post("/user", checkJwt, user_controller.user_create);
-router.get("/user", checkJwt, user_controller.user_getall);
+router.post("/user", user_controller.user_create);
+router.get("/user", user_controller.user_getall);
 router.get("/user/:id", user_controller.user_getbyid);
 router.put("/user/:id", user_controller.user_update);
 router.delete("/user/:id", user_controller.user_delete);

@@ -22,6 +22,9 @@ const postSchema = new mongoose.Schema({
     maxlength: 255,
     required: [true, "Ocupa un escribir algo en el post"],
   },
+  categoria: {
+    type: String,
+  },
 });
 
 const Post = mongoose.model("posti", postSchema);

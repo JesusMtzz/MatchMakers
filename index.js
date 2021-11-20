@@ -1,5 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors")
+
+
 require("./src/models/connection");
 /* requires de rutas */
 const preferences_router = require("./src/routes/preferencesRouter");
@@ -23,8 +26,8 @@ const squad_router = require("./src/routes/squadRouter");
 const user_router = require("./src/routes/userRouter");
 
 const app = express();
-const port = 3000; // 5000 // 5001;
-
+const port = 5000; // 5000 // 5001;
+app.use(cors())
 app.use(bodyParser.json());
 app.use("/api", preferences_router);
 app.use("/api", rateUser_router);

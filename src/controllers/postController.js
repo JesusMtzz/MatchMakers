@@ -16,8 +16,8 @@ exports.post_create = (req, res) => {
 };
 
 exports.post_getall = async (req, res) => {
-  const data = await post.find();
-
+  const data = await post.find().sort({ fechaCreacion : "descending"});
+  
   res.send(data);
 };
 
